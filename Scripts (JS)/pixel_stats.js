@@ -1,5 +1,5 @@
 /*
-                           --==Pixel Stats v0.1 (JS)==--
+                           --==Pixel Stats v1.0 (JS)==--
                               Scripting: Haloflooder
                                   Idea: CopherNeue
 
