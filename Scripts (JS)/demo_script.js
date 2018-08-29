@@ -669,7 +669,7 @@ function intro() {
 
 // Execute the functions here
 
-//intro();
+intro();
 
 //rectDemo();
 //selectionDemo();
