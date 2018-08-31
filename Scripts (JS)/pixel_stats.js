@@ -214,6 +214,8 @@ if (debug) {
 // Analyze the data!
 
 // Image stats
+console.log("--==Pixel Stats v1.1==--");
+console.log("");
 console.log("--==Image Statistics==--");
 if (selected) {
 	console.log("Selection size: "+box.width+"x"+box.height);
