@@ -660,6 +660,32 @@ function copyFromFile() {
 	}
 }
 
+function rainbowColor(selection) {
+	var box = selection;
+	
+	var hue = 0;
+	var sat = 0;
+	var satback = 1;
+	for (var y=box.y; y<box.y+box.height-2; ++y) {
+		sat = y;
+		satback = 1;
+		for (var x=box.x; x<box.x+box.width; ++x) {
+			var h = HSV2RGB(hue%256,sat%255,255); // This helps us convert numbers into a pretty rainbow
+			var c = col.rgba(h[0],h[1],h[2],255);
+			img.putPixel(x,y,c);
+			hue++;
+			if (sat%256 == 254) {
+				satback *= -1;
+			}
+			if (satback == 1) {
+				sat++;
+			} else {
+				sat--;
+			}
+		}
+	}
+}
+
 function intro() {
 	console.log("Hello! This is a demonstration script that shows you how to execute certain functions with Aseprite.");
 	console.log("You can open the script file and mess with it's contents with notepad++, atom, sublime, or whatever you want to use.");
@@ -687,6 +713,7 @@ intro();
 //flexibleCheckerboard(checkSelection(sel), col.rgba(0,148,255,255), 1, col.rgba(112,112,112,255));
 //selectionTiler(checkSelection(sel));
 //copyFromFile();
+//rainbowColor(
 
 console.log(" ");
 console.log("This version of Aseprite is "+app.version+"!\n"); // Get Aseprite's version. \n mean "newline". You can alternatively do this instead of console.log(" ");
