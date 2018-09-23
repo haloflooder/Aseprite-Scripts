@@ -11,4 +11,4 @@ I have also made a [library of functions](https://github.com/haloflooder/Aseprit
 - [Demo Script](https://github.com/haloflooder/Aseprite-Scripts/blob/master/Scripts%20(JS)/demo_script.js)
 
 ## List of Scripts (LUA)
-- To-Do
+- [Pixel Stats](https://github.com/haloflooder/Aseprite-Scripts/blob/master/Scripts%20(LUA)/pixel_stats.lua)
